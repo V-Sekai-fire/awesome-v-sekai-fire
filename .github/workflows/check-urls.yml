@@ -1,0 +1,21 @@
+name: Check URLs
+on:
+  push:
+  pull_request:
+  schedule:
+    # Every day at midnight (UTC). Links decay; a schedule finds dead ones early.
+    - cron: "0 0 * * *"
+
+jobs:
+  check-urls:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Check link validity
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --max-concurrency 8 README.md
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
