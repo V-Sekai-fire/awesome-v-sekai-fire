@@ -55,6 +55,7 @@ _How the workspace is laid out, decided and checked. Start here._
 
 - [.github](https://github.com/V-Sekai-fire/.github)
 - [.vscode](https://github.com/V-Sekai-fire/.vscode) - A code editor configuration that builds and debugs the Godot editor from a workspace whose engine source sits in `godot/`.
+- [awesome-v-sekai-fire](https://github.com/V-Sekai-fire/awesome-v-sekai-fire) - Awesome list of V-Sekai-fire projects.
 - [contract-bootstrap](https://github.com/V-Sekai-fire/contract-bootstrap) - Workspace bootstrap: pixi env, bootstrap/install scripts and pins, separated from the manifest. (Python)
 - [contract-manifest-taskweft](https://github.com/V-Sekai-fire/contract-manifest-taskweft) - The workspace's goal manifest: `default.xml` places every project on a side of the hexagon. (Elixir)
 - [contract-multiplayer-fabric-archive](https://github.com/V-Sekai-fire/contract-multiplayer-fabric-archive) - Archived decision records for the v-sekai-fabric stack: rejected and superseded MADRs, and superseded RFDs.
@@ -415,7 +416,7 @@ _Secrets, storage, builds, launchers and observability._
 - [service-game-observability](https://github.com/V-Sekai-fire/service-game-observability) - Observability stack: VictoriaMetrics + VictoriaLogs + Tempo + OTEL Collector on Fly.io.
 - [service-godot-build](https://github.com/V-Sekai-fire/service-godot-build) - Runs a Godot repository's Windows build matrix locally, reading it from .github/workflows. (Elixir)
 - [service-hex-ops](https://github.com/V-Sekai-fire/service-hex-ops) - Manual GitHub Actions ops for Hex package publish/retire/unretire across the taskweft org.
-- [service-openbao](https://github.com/V-Sekai-fire/service-openbao) - OpenBao on Fly.io with the restored FoundationDB storage backend. (Python)
+- [service-openbao](https://github.com/V-Sekai-fire/service-openbao) - OpenBao on Fly.io with the restored FoundationDB storage backend. (Shell)
 - [service-sqlar-cas](https://github.com/V-Sekai-fire/service-sqlar-cas) - Elixir service serving sqlar-cas (age v1.1.0 crypto in a SQLite/S3 wire, ReBAC via Bao). (Elixir)
 - [transport-central-launcher](https://github.com/V-Sekai-fire/transport-central-launcher) - Install, launch and update the workspace runtime as one binary per platform. (Elixir)
 - [transport-oauth-mcp-bridge](https://github.com/V-Sekai-fire/transport-oauth-mcp-bridge) - A generic OAuth 2.1-to-MCP authorization bridge (GitHub login), extracted from taskweft/deploy. (Elixir)
