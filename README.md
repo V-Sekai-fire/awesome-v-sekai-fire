@@ -716,7 +716,6 @@ _Upstream projects that V-Sekai-fire mirrors, pins or patches. The link goes to 
 
 - [Awesome V-Sekai](https://github.com/V-Sekai/awesome-v-sekai) - The V-Sekai list this one follows.
 - [V-Sekai](https://github.com/V-Sekai) - The main V-Sekai organization.
-- [V-Sekai-multiplayer-fabric](https://github.com/V-Sekai-multiplayer-fabric) - The multiplayer fabric organization.
 - [Taskweft](https://github.com/taskweft/taskweft) - The HTN planner.
 - [Awesome Godot](https://github.com/godotengine/awesome-godot) - Godot Engine frameworks, libraries and resources.
 
