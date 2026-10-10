@@ -44,6 +44,8 @@ These are listed and are not free/libre. They were left as they are:
 3. The commits went to an `add-licence` branch in each repository instead.
 4. `scripts/licence-sweep/waves.py` opened the pull requests in waves of 18, through the `gh` wrapper that takes a pr-credit for each new PR (25 credits, shared with other work). It merged each PR when its checks passed and opened the next wave when the current one drained.
 
+Outcome: 137 licences landed by PR and 1 by direct push; 2 repositories were left unlicensed on purpose. `interactor-rfdetr-seg-guest` PR #5 was merged past a failing `translated` check: that check compares against a recorded interpreted run whose ELF no longer matches the current build, which is unrelated to the licence change and stays to be re-recorded in that repository.
+
 Lessons from the run:
 
 - A repository with a merge queue rejects `gh pr merge --delete-branch`. Use plain `gh pr merge` and let the queue merge it.
