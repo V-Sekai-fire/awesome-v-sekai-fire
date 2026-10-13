@@ -120,7 +120,7 @@ SECTIONS = [
      "Gameplay and engine rules stated and checked in Lean 4, often with Plausible property tests, then emitted to C or Slang.",
      lambda n: ((orig[n]["primaryLanguage"] or {}).get("name") == "Lean" and not n.startswith("interactor-taskweft"))
      or n in ("contract-lean-slang", "contract-lbfgsb", "contract-anny-kernels", "contract-trellis2-mesh-vae-slang",
-              "contract-materialx-shaders-lean", "contract-hm08-partition")),
+              "contract-materialx-shaders-lean", "contract-hm08-partition", "contract-bone-kernels")),
     ("godot-sandbox guests (RISC-V)",
      "Programs that run as sandboxed RISC-V ELF guests inside Godot through godot-sandbox and libriscv.",
      lambda n: n in ("interactor-bake", "interactor-cage", "interactor-curvenet", "interactor-drape",
@@ -132,7 +132,8 @@ SECTIONS = [
                      "entities-libriscv", "entities-godot-sandbox-gdscript-compiler",
                      "entities-godot-sandbox-robust-weight-transfer", "entities-godot-gdscript-compiler-demo",
                      "entities-godot-bird-plane", "entities-godot-enet-sandbox", "service-weft-warp-burrito",
-                     "repository-riscv64-sysroot", "interactor-taskweft-crowd")),
+                     "repository-riscv64-sysroot", "interactor-taskweft-crowd",
+                     "interactor-lean-guest", "hypercore-chat-guest")),
     ("Taskweft and planning",
      "Hierarchical task network planning: the Taskweft planner, its domains, and the agents that use it.",
      lambda n: n.startswith("interactor-taskweft") or n.startswith("interactor-aria-")
@@ -190,7 +191,7 @@ SECTIONS = [
               "datasource-meshgpt-dataset-02")),
     ("MCP servers and agent tools",
      "Model Context Protocol servers and tools that let agents drive engines, editors and solvers.",
-     lambda n: n.endswith("-mcp") or n.startswith("transport-mcp-") or n in ("interactor-xr-pilot", "transport-sympy-mcp")),
+     lambda n: n.endswith("-mcp") or n.startswith("transport-mcp-") or n in ("interactor-xr-pilot", "transport-sympy-mcp", "interactor-touch-companion")),
     ("Video, audio and broadcast",
      "CineForm recording, AV1/FLAC muxing and the desk's broadcast setup.",
      lambda n: n in ("interactor-cineform", "interactor-av1mkv", "service-cineform", "transport-cineform-tui",

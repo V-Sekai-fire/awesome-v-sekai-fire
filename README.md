@@ -53,9 +53,9 @@ _The Godot engine branch the fabric runs on, and the build that assembles it._
 
 _How the workspace is laid out, decided and checked. Start here._
 
-- [.github](https://github.com/V-Sekai-fire/.github)
+- [.github](https://github.com/V-Sekai-fire/.github) (Shell)
 - [.vscode](https://github.com/V-Sekai-fire/.vscode) - A code editor configuration that builds and debugs the Godot editor from a workspace whose engine source sits in `godot/`.
-- [awesome-v-sekai-fire](https://github.com/V-Sekai-fire/awesome-v-sekai-fire) - Awesome list of V-Sekai-fire projects.
+- [awesome-v-sekai-fire](https://github.com/V-Sekai-fire/awesome-v-sekai-fire) - Awesome list of V-Sekai-fire projects. (Python)
 - [contract-bootstrap](https://github.com/V-Sekai-fire/contract-bootstrap) - Workspace bootstrap: pixi env, bootstrap/install scripts and pins, separated from the manifest. (Python)
 - [contract-manifest-taskweft](https://github.com/V-Sekai-fire/contract-manifest-taskweft) - The workspace's goal manifest: `default.xml` places every project on a side of the hexagon. (Elixir)
 - [contract-multiplayer-fabric-archive](https://github.com/V-Sekai-fire/contract-multiplayer-fabric-archive) - Archived decision records for the v-sekai-fabric stack: rejected and superseded MADRs, and superseded RFDs.
@@ -125,6 +125,7 @@ _The shared-world server stack: the iceoryx2 bus, the authority and fan-out plan
 _Gameplay and engine rules stated and checked in Lean 4, often with Plausible property tests, then emitted to C or Slang._
 
 - [contract-anny-kernels](https://github.com/V-Sekai-fire/contract-anny-kernels) - The ANNY body model's forward and backward kernels in Lean, emitted through Slang for the in-guest fits. (C++)
+- [contract-bone-kernels](https://github.com/V-Sekai-fire/contract-bone-kernels) - The animation mixer's per-frame bone work as Lean kernels, emitted through Slang for GPU clients and servers. (C++)
 - [contract-combat](https://github.com/V-Sekai-fire/contract-combat) - Combat hexagon — Lean reducer (combo/invuln/damage), core/ports/adapters triad, wire parity. (Lean)
 - [contract-hm08-partition](https://github.com/V-Sekai-fire/contract-hm08-partition) - What hm08 vertex groups cover, stated in Lean. (Python)
 - [contract-lbfgsb](https://github.com/V-Sekai-fire/contract-lbfgsb) - L-BFGS-B written in Lean and emitted through Slang to CPU and SPIR-V, with the guest driver drape, cage and headfit share. (C++)
@@ -159,6 +160,7 @@ _Programs that run as sandboxed RISC-V ELF guests inside Godot through godot-san
 - [entities-godot-sandbox-gdscript-compiler](https://github.com/V-Sekai-fire/entities-godot-sandbox-gdscript-compiler) - A compiler from GDScript to RISC-V ELF programs that run as godot-sandbox guests. (C++)
 - [entities-godot-sandbox-robust-weight-transfer](https://github.com/V-Sekai-fire/entities-godot-sandbox-robust-weight-transfer) - An engine project that runs robust skin weight transfer, by weight inpainting, inside a sandboxed RISC-V guest. (C++)
 - [entities-libriscv](https://github.com/V-Sekai-fire/entities-libriscv) (C++)
+- [hypercore-chat-guest](https://github.com/V-Sekai-fire/hypercore-chat-guest) - P2P DHT chat on hypercore as a godot-sandbox RISC-V guest, Lean 4.
 - [interactor-bake](https://github.com/V-Sekai-fire/interactor-bake) - Alpha culling and texture atlases for avatar meshes as a godot-sandbox guest, the CPU part of RFD 2284's bake stage. (C++)
 - [interactor-cage](https://github.com/V-Sekai-fire/interactor-cage) - The cage stage as a godot-sandbox guest: the (1,3) biharmonic bind and the in-motion cage fit on L-BFGS-B. (C++)
 - [interactor-curvenet](https://github.com/V-Sekai-fire/interactor-curvenet) - The curvenet stage as a godot-sandbox guest: CASSIE strokes to a curve network and a mesh, with its sketch graph. (C++)
@@ -166,6 +168,7 @@ _Programs that run as sandboxed RISC-V ELF guests inside Godot through godot-san
 - [interactor-garment-fit](https://github.com/V-Sekai-fire/interactor-garment-fit) - The fit stage as a godot-sandbox guest: cloth-fit's PolyFEM garment solve with the Lean SDF sampler. (C++)
 - [interactor-headfit](https://github.com/V-Sekai-fire/interactor-headfit) - The head fit as a godot-sandbox guest: the ANNY head fit and the unified-expression transfer. (C++)
 - [interactor-lasso](https://github.com/V-Sekai-fire/interactor-lasso) - The lasso as a godot-sandbox guest: far-target picking by a pointing cone, with its Lean tests. (C++)
+- [interactor-lean-guest](https://github.com/V-Sekai-fire/interactor-lean-guest) - Lean 4 programs as static riscv64 guest ELFs for godot-sandbox (libriscv). (CMake)
 - [interactor-motion-guest](https://github.com/V-Sekai-fire/interactor-motion-guest) - Kimodo and MotionBricks motion on ggml-rd as a godot-sandbox guest, for the in-motion dress fit. (C++)
 - [interactor-mujoco-cloth-sim](https://github.com/V-Sekai-fire/interactor-mujoco-cloth-sim) - Deterministic cloth on a RISC-V/MuJoCo guest: a garment-craft sim whose constraint solve is bit-identical on every host. (GDScript)
 - [interactor-mujoco-riscv64](https://github.com/V-Sekai-fire/interactor-mujoco-riscv64) - riscv64 Linux build of MuJoCo, with libriscv host bindings (seeded from zone-server-h2o's own vendored mujoco + mj_physics.c wiring). (C)
@@ -370,6 +373,7 @@ _ggml ports, model images, Elixir ML bindings and training experiments._
 
 _Model Context Protocol servers and tools that let agents drive engines, editors and solvers._
 
+- [interactor-touch-companion](https://github.com/V-Sekai-fire/interactor-touch-companion) - A game's captured window and touch key buttons in one window, so an agent that can only click can play keyboard games. (C++)
 - [interactor-xr-pilot](https://github.com/V-Sekai-fire/interactor-xr-pilot) - Lets an AI agent see and drive OpenXR apps. (C++)
 - [transport-blender-mcp](https://github.com/V-Sekai-fire/transport-blender-mcp) - A Blender addon and Model Context Protocol server that let an agent build and edit 3D scenes over a local socket. (Python)
 - [transport-easy-diffusion-mcp](https://github.com/V-Sekai-fire/transport-easy-diffusion-mcp) - MCP Server for Easy Diffusion. (Elixir)
@@ -488,7 +492,7 @@ _Training sets, evaluation sets and importer fixtures._
 _Upstream projects that V-Sekai-fire mirrors, pins or patches. The link goes to the fork; the parent is in brackets._
 
 <details>
-<summary>220 forks</summary>
+<summary>219 forks</summary>
 
 - [3dgs-ply2gltf](https://github.com/V-Sekai-fire/3dgs-ply2gltf) [[NorbertNopper-Huawei/3dgs_ply2gltf](https://github.com/NorbertNopper-Huawei/3dgs_ply2gltf)] - 3DGS PLY to glTF converter.
 - [app-ayon-backend](https://github.com/V-Sekai-fire/app-ayon-backend) [[digitalocean/sample-dockerfile](https://github.com/digitalocean/sample-dockerfile)] - The Docker-based deployment for the Ayon production-tracking server.
@@ -671,7 +675,6 @@ _Upstream projects that V-Sekai-fire mirrors, pins or patches. The link goes to 
 - [stable-motion](https://github.com/V-Sekai-fire/stable-motion) [[Murrol/StableMotion](https://github.com/Murrol/StableMotion)]
 - [star-vector](https://github.com/V-Sekai-fire/star-vector) [[nyirocsaba/star-vector](https://github.com/nyirocsaba/star-vector)] - StarVector is a foundation model for SVG generation that transforms vectorization into a code generation task.
 - [Storages](https://github.com/V-Sekai-fire/Storages) [[LDYang694/Storages](https://github.com/LDYang694/Storages)]
-- [svgcleaner](https://github.com/V-Sekai-fire/svgcleaner) [[RazrFalcon/svgcleaner](https://github.com/RazrFalcon/svgcleaner)] - svgcleaner could help you to clean up your SVG files from the unnecessary data.
 - [T_cc0_cat_A](https://github.com/V-Sekai-fire/T_cc0_cat_A) [[jeanahelver/CC0-CAT](https://github.com/jeanahelver/CC0-CAT)] - We have cats in the public domain.
 - [test_specular_aliasing](https://github.com/V-Sekai-fire/test_specular_aliasing) [[Calinou/test_specular_aliasing](https://github.com/Calinou/test_specular_aliasing)] - Godot 4.0 test project for specular aliasing.
 - [three-nanite](https://github.com/V-Sekai-fire/three-nanite) [[AIFanatic/three-nanite](https://github.com/AIFanatic/three-nanite)] - An attempt at reproducing unreal nanite in threejs.
