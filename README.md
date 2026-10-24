@@ -161,7 +161,7 @@ _Programs that run as sandboxed RISC-V ELF guests inside Godot through godot-san
 - [entities-godot-sandbox-robust-weight-transfer](https://github.com/V-Sekai-fire/entities-godot-sandbox-robust-weight-transfer) - An engine project that runs robust skin weight transfer, by weight inpainting, inside a sandboxed RISC-V guest. (C++)
 - [entities-libriscv](https://github.com/V-Sekai-fire/entities-libriscv) (C++)
 - [hypercore-chat-guest](https://github.com/V-Sekai-fire/hypercore-chat-guest) - P2P DHT chat on hypercore as a godot-sandbox RISC-V guest, Lean 4.
-- [interactor-bake](https://github.com/V-Sekai-fire/interactor-bake) - Alpha culling and texture atlases for avatar meshes as a godot-sandbox guest, the CPU part of RFD 2284's bake stage. (C++)
+- [interactor-bake](https://github.com/V-Sekai-fire/interactor-bake) - Alpha culling and texture atlases for avatar meshes as a godot-sandbox guest, the CPU part of RFD66606-2284's bake stage. (C++)
 - [interactor-cage](https://github.com/V-Sekai-fire/interactor-cage) - The cage stage as a godot-sandbox guest: the (1,3) biharmonic bind and the in-motion cage fit on L-BFGS-B. (C++)
 - [interactor-curvenet](https://github.com/V-Sekai-fire/interactor-curvenet) - The curvenet stage as a godot-sandbox guest: CASSIE strokes to a curve network and a mesh, with its sketch graph. (C++)
 - [interactor-drape](https://github.com/V-Sekai-fire/interactor-drape) - The drape stage as a godot-sandbox guest: AVBD cloth from Lean kernels on the CPU and on RenderingDevice. (C++)
@@ -174,7 +174,7 @@ _Programs that run as sandboxed RISC-V ELF guests inside Godot through godot-san
 - [interactor-mujoco-riscv64](https://github.com/V-Sekai-fire/interactor-mujoco-riscv64) - riscv64 Linux build of MuJoCo, with libriscv host bindings (seeded from zone-server-h2o's own vendored mujoco + mj_physics.c wiring). (C)
 - [interactor-mujoco-sandbox-demo](https://github.com/V-Sekai-fire/interactor-mujoco-sandbox-demo) - A physics library built as a RISC-V guest program that an engine project loads into a sandbox and steps from script. (GDScript)
 - [interactor-multiplayer-fabric-elf-programs](https://github.com/V-Sekai-fire/interactor-multiplayer-fabric-elf-programs) - Sandboxed RISC-V guest programs for the multiplayer fabric: grid simulation kernels and an HTN planner with holographic memory. (C++)
-- [interactor-remesh](https://github.com/V-Sekai-fire/interactor-remesh) - meshoptimizer's voxel remesher and simplifier as a godot-sandbox guest, the remesh stage of RFD 2284. (C++)
+- [interactor-remesh](https://github.com/V-Sekai-fire/interactor-remesh) - meshoptimizer's voxel remesher and simplifier as a godot-sandbox guest, the remesh stage of RFD66606-2284. (C++)
 - [interactor-rfdetr-seg-guest](https://github.com/V-Sekai-fire/interactor-rfdetr-seg-guest) - RF-DETR instance segmentation on ggml-rd as a godot-sandbox guest. (Elixir)
 - [interactor-slughorn](https://github.com/V-Sekai-fire/interactor-slughorn) - slughorn for slug.elf: SVG to curve and band data and baked meshes, with ThorVG and Clipper2. (C++)
 - [interactor-taskweft-crowd](https://github.com/V-Sekai-fire/interactor-taskweft-crowd) - A deterministic transit-station crowd on a RISC-V/MuJoCo guest: thousands of taskweft HTN agents steer through a shared station, bit-identical on every host. (GDScript)
@@ -299,7 +299,7 @@ _Engine modules, GDExtensions, editor addons and the small projects that check t
 _weftfit garment retargeting, mesh processing, and image- or text-to-3D model images._
 
 - [biharmonic-3d-coordinates-siggraph-2024](https://github.com/V-Sekai-fire/biharmonic-3d-coordinates-siggraph-2024) - Reference code for biharmonic 3D coordinates (SIGGRAPH 2024). (C++)
-- [contract-billboard-labels](https://github.com/V-Sekai-fire/contract-billboard-labels) - RFD 0074: 3D caption labels over weftspun-3d-studio's billboard gallery cards. (HTML)
+- [contract-billboard-labels](https://github.com/V-Sekai-fire/contract-billboard-labels) - RFD66606-0074: 3D caption labels over weftspun-3d-studio's billboard gallery cards. (HTML)
 - [interactor-blender-meshoptimizer](https://github.com/V-Sekai-fire/interactor-blender-meshoptimizer) - An add-on for an open-source 3D creation suite that simplifies the selected meshes to a target error with meshoptimizer. (Python)
 - [interactor-blender-multi-user](https://github.com/V-Sekai-fire/interactor-blender-multi-user) - The Blender multi-user collaborative editing addon, carried from slumber/multi-user. (Python)
 - [interactor-cli](https://github.com/V-Sekai-fire/interactor-cli) - weftfit driving adapter: Elixir CLI + Fine NIF, packaged as a self-contained Burrito binary. (Elixir)
@@ -329,8 +329,8 @@ _weftfit garment retargeting, mesh processing, and image- or text-to-3D model im
 - [repository-usd-core-wheels](https://github.com/V-Sekai-fire/repository-usd-core-wheels) - OpenUSD Python wheels built for arm64 macOS (and other platforms lacking pypi coverage).
 - [service-cog-sam-part-3d](https://github.com/V-Sekai-fire/service-cog-sam-part-3d) - A `cog` predictor that builds the SAMPart3D part-segmentation stack and renders a mesh's views for it. (Python)
 - [service-cog-vsk-mesh-optimizer](https://github.com/V-Sekai-fire/service-cog-vsk-mesh-optimizer) - A container predictor that simplifies a binary glTF model with meshoptimizer's packer and returns the smaller file. (Python)
-- [weftspun-character-taxonomy](https://github.com/V-Sekai-fire/weftspun-character-taxonomy) - RFD 0065 character taxonomy: headless-CMS JSON route, static randomizer page, MCP server. (Elixir)
-- [weftspun-usd-viewer](https://github.com/V-Sekai-fire/weftspun-usd-viewer) - usd_viewer_app: static server for the RFD 0073 billboard gallery's usd-viewer WASM build, its own Fly deploy target. (JavaScript)
+- [weftspun-character-taxonomy](https://github.com/V-Sekai-fire/weftspun-character-taxonomy) - RFD66606-0065 character taxonomy: headless-CMS JSON route, static randomizer page, MCP server. (Elixir)
+- [weftspun-usd-viewer](https://github.com/V-Sekai-fire/weftspun-usd-viewer) - usd_viewer_app: static server for the RFD66606-0073 billboard gallery's usd-viewer WASM build, its own Fly deploy target. (JavaScript)
 
 ## Machine learning and inference
 
@@ -446,7 +446,7 @@ _Maps, scenes, interactive fiction, galleries and concept work._
 - [entities-scene-morning-in-a-cafe](https://github.com/V-Sekai-fire/entities-scene-morning-in-a-cafe) - A cafe scene for the social VR world, as an engine project with the avatar and map add-ons it loads. (GDShader)
 - [entities-scene-room-1107](https://github.com/V-Sekai-fire/entities-scene-room-1107) - A living-room map scene in an engine project, with the addons that define it as a V-Sekai map and upload it. (GDShader)
 - [entities-scene-Video-and-Gltf](https://github.com/V-Sekai-fire/entities-scene-Video-and-Gltf) - A social VR world project, started from the platform's default world scene, meant for video and glTF content. (C#)
-- [entities-starforged](https://github.com/V-Sekai-fire/entities-starforged) - Game module for entities-godot: RFD 1175 Starforged decision-point VN + video capture head.
+- [entities-starforged](https://github.com/V-Sekai-fire/entities-starforged) - Game module for entities-godot: RFD66606-1175 Starforged decision-point VN + video capture head.
 - [entities-vsk-character-overview](https://github.com/V-Sekai-fire/entities-vsk-character-overview) - An engine project that lays out a character overview sheet around a `.vrm` avatar. (GDShader)
 - [entities-vsk-FONT-experiments](https://github.com/V-Sekai-fire/entities-vsk-FONT-experiments) - A few openly licensed font families with their engine import settings, kept for typeface experiments.
 - [entities-vsk-hut](https://github.com/V-Sekai-fire/entities-vsk-hut) (GDScript)
